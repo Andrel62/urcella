@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{%block content%}
+<div class="content">
+    <div class="card shadow-lg" style="width: 18rem;">
+      <img src="/static/imgs/wp7771193-amazon-logo-wallpapers.jpg" class="card-img-top" alt="amazon logo">
+      <div class="card-body">
+      <a href="#" class="btn btn-primary">amazon</a>
+    </div>
+  </div>
+  <div class="card shadow-lg" style="width: 18rem;">
+    <img src="/static/imgs/preview-takealotcom.png" class="card-img-top" alt="...">
+    <div class="card-body">
+    <a href="#" class="btn btn-primary">takealot</a>
+  </div>
+</div>
+<div class="card shadow-lg" style="width: 18rem;">
+  <img src="/static/imgs/mike-petrucci-c9FQyqIECds-unsplash.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+  <a href="{%url 'demo'%}" class="btn btn-primary">Demo</a>
+</div>
+</div>
+
+  </div>
+{%endblock%}

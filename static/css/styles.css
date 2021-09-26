@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  font-family: Poppins;
+}
+header{
+  color: white;
+  background-color: #1d4c91;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a{
+  margin: 5px;
+}
+
+.banner{
+  padding: 300px;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.intro-text{
+  font-size: 30px;
+}
+
+footer{
+  color: white;
+  background-color: #1d4c91;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+  display: flex;
+  margin: 70px;
+
+}
+
+.card{
+  margin: 20px;
+}
+
+.keywords-content{
+  border: 1px solid black;
+  padding-bottom: 200px;
+}
+
+.quant-sec{
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+}

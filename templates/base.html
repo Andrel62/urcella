@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="{%static 'js/script.js'%}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="{%url 'home'%}" style="color: white; text-decoration:none;">URCELLA</a>
+      </div>
+      <nav>
+        <a href="{%url 'keywords'%}"><button id="commands" type="button" name="button">commands</button></a>
+        <a id="stores" href="{%url 'stores'%}"><button id="stores" type="button" name="button">stores</button></a>
+      </nav>
+    </header>
+    {%block content%}{%endblock%}
+  </body>
+  <footer>
+      <div class="copyright">
+        <p>&copy; 2021 urcella</p>
+      </div>
+  </footer>
+</html>
