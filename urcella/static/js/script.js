@@ -11,6 +11,10 @@ recognition.addEventListener('result', (e) =>{
   .map(result =>result.transcript)
   .join('');
 
+  if(text.includes('open stores')){
+    $("#stores").trigger("click");
+  }
+
   console.log(text);
 })
 recognition.addEventListener('end',()=>{
