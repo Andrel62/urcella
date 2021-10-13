@@ -11,8 +11,8 @@ recognition.addEventListener('result', (e) =>{
   .map(result =>result.transcript)
   .join('');
 
-  if(text.includes('open stores')){
-    $("#stores").trigger("click");
+  if(text.includes('open commands')|| text.includes('Open commands')){
+    $("#commands").click();
   }
 
   console.log(text);
