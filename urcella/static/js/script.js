@@ -1,6 +1,3 @@
-const commands = document.querySelector('#commands');
-const stores = document.querySelector('#stores');
-
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new window.SpeechRecognition();
 recognition.interimResults = true;
@@ -11,7 +8,7 @@ recognition.addEventListener('result', (e) =>{
   .map(result =>result.transcript)
   .join('');
 
-  if(text.includes('open commands')|| text.includes('Open commands')){
+  if(text.includes('open commands')){
     $("#commands").click();
   }
 
